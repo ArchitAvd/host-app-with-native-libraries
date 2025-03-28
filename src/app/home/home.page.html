@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Booking Application</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="card-container" *ngFor="let card of cards">
+    <ion-card>
+      <div class="image-container">
+        <img alt="{{card.displayName}} Image" [src]="card.image" />
+      </div>
+
+      <ion-card-content>
+        <ion-button
+          expand="block"
+          color="primary"
+          [routerLink]="'/'+card.routePath"
+        >
+          {{card.displayName}} Booking
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <h1>Welcome to My Ionic App</h1>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Getting Started</ion-card-title>
+      <ion-card-subtitle>Ionic Framework</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Build amazing cross-platform apps with Ionic. This is a quick example of
+      how to create an interactive card.
+    </ion-card-content>
+  </ion-card>
+</ion-content>

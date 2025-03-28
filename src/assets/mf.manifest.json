@@ -1,0 +1,16 @@
+{
+  "flight": {
+    "remoteEntry": "https://flight-booking-app-with-camera.vercel.app/remoteEntry.js",
+    "exposedModule": "./FlightAppModule",
+    "displayName": "Flight Remote",
+    "routePath": "flight",
+    "ngModuleName": "FlightAppModule"
+  },
+  "hotel": {
+    "remoteEntry": "https://hotel-booking-phi-wheat.vercel.app/remoteEntry.js",
+    "exposedModule": "./HotelAppModule",
+    "displayName": "Hotel Remote",
+    "routePath": "hotel",
+    "ngModuleName": "HotelAppModule"
+  }
+}
